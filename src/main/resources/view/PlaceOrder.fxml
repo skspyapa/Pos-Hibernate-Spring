@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="612.0" prefWidth="683.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.PlaceOrderController">
+    <children>
+        <Label alignment="CENTER" prefHeight="40.0" prefWidth="683.0" text="Place Order" textFill="#0f30f5">
+            <font>
+                <Font size="28.0"/>
+            </font>
+        </Label>
+        <Label layoutX="48.0" layoutY="52.0" text="Order ID"/>
+        <Label layoutX="50.0" layoutY="103.0" text="Customer ID"/>
+        <JFXTextField fx:id="txtOrderID" layoutX="162.0" layoutY="48.0" onAction="#txtOrderID_Action"/>
+        <Label layoutX="374.0" layoutY="52.0" prefHeight="17.0" prefWidth="87.0" text="Order Date"/>
+        <Label layoutX="374.0" layoutY="90.0" text="Customer Name"/>
+        <JFXTextField fx:id="txtOrderDate" layoutX="508.0" layoutY="48.0"/>
+        <JFXTextField fx:id="txtCustomerName" layoutX="508.0" layoutY="86.0"/>
+        <Label layoutX="48.0" layoutY="151.0" text="Item Code"/>
+        <Label layoutX="48.0" layoutY="194.0" text="Qty On Hand"/>
+        <Label layoutX="48.0" layoutY="235.0" text="Qty"/>
+        <ComboBox fx:id="cmbItemCode" layoutX="162.0" layoutY="147.0" prefWidth="150.0"/>
+        <JFXTextField fx:id="txtQtyOnHand" layoutX="162.0" layoutY="190.0" prefHeight="25.0" prefWidth="135.0"/>
+        <JFXTextField fx:id="txtQty" layoutX="162.0" layoutY="231.0" onAction="#txtQty_Action"/>
+        <Label layoutX="374.0" layoutY="194.0" text="Description"/>
+        <Label layoutX="372.0" layoutY="236.0" text="Unit Price"/>
+        <JFXTextField fx:id="txtDescription" layoutX="508.0" layoutY="190.0" prefHeight="25.0" prefWidth="135.0"/>
+        <JFXTextField fx:id="txtUnitPrice" layoutX="508.0" layoutY="232.0"/>
+        <JFXButton fx:id="btnAdd" layoutX="298.0" layoutY="273.0" onAction="#btnAdd_Action" prefHeight="25.0"
+                   prefWidth="97.0" text="Add"/>
+        <TableView fx:id="tblOrder" layoutX="36.0" layoutY="306.0" prefHeight="200.0" prefWidth="612.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Code"/>
+                <TableColumn prefWidth="230.0" text="Description"/>
+                <TableColumn prefWidth="67.0" text="Qty"/>
+                <TableColumn prefWidth="77.0" text="Unit Price"/>
+                <TableColumn prefWidth="93.0" text="Total"/>
+            </columns>
+        </TableView>
+        <ComboBox fx:id="cmbCustomerID" layoutX="162.0" layoutY="99.0" prefWidth="150.0"/>
+        <Label alignment="CENTER" layoutX="36.0" layoutY="539.0" prefHeight="32.0" prefWidth="55.0" text="Total"
+               textFill="#135ae8">
+            <font>
+                <Font size="19.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblTotal" alignment="CENTER" layoutX="94.0" layoutY="539.0" prefHeight="32.0" prefWidth="70.0"
+               text="Label" textFill="#f82121"/>
+        <Label fx:id="lblPlaceOrder" layoutX="483.0" layoutY="532.0" onMouseClicked="#lblPlaceOrder_Action"
+               text="Place Order" textFill="#5118e1">
+            <font>
+                <Font size="32.0"/>
+            </font>
+        </Label>
+        <Label fx:id="lblBack" alignment="CENTER" layoutX="277.0" layoutY="543.0" onMouseClicked="#lblBack_Clicked"
+               prefHeight="25.0" prefWidth="87.0" text="Back" textFill="#204c86"/>
+    </children>
+</AnchorPane>

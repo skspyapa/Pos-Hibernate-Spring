@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="491.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageItemController">
+    <children>
+        <Label fx:id="lblItem" alignment="CENTER" layoutX="310.0" layoutY="14.0" onMouseClicked="#lblItem_Clicked"
+               prefHeight="25.0" prefWidth="98.0" text="New Item"/>
+        <JFXTextField fx:id="txtCode" layoutX="125.0" layoutY="40.0" onAction="#txtCode_Clicked" prefHeight="25.0"
+                      prefWidth="135.0"/>
+        <JFXTextField fx:id="txtDescription" layoutX="125.0" layoutY="80.0" onAction="#txtDescription_Clicked"/>
+        <JFXTextField fx:id="txtQtyOnHand" layoutX="125.0" layoutY="120.0" onAction="#txtQtyOnHand_Clicked"/>
+        <JFXTextField fx:id="txtUnitPrice" layoutX="125.0" layoutY="160.0" onAction="#txtUnitPrice_Clicked"/>
+        <Label layoutX="33.0" layoutY="44.0" text="Code"/>
+        <Label layoutX="33.0" layoutY="84.0" text="Description"/>
+        <Label layoutX="33.0" layoutY="124.0" text="Qty On Hand"/>
+        <Label layoutX="33.0" layoutY="164.0" text="Unit Price"/>
+        <TableView fx:id="tblItem" layoutX="14.0" layoutY="222.0" prefHeight="255.0" prefWidth="404.0">
+            <columns>
+                <TableColumn prefWidth="75.0" text="Code"/>
+                <TableColumn prefWidth="75.0" text="Description"/>
+                <TableColumn prefWidth="92.0" text="Qty On Hand"/>
+                <TableColumn prefWidth="93.0" text="Unit Price"/>
+            </columns>
+        </TableView>
+        <Button fx:id="btn_Save" layoutX="306.0" layoutY="169.0" mnemonicParsing="false" onAction="#btn_Save_Clicked"
+                prefHeight="25.0" prefWidth="78.0" text="Save"/>
+        <Label fx:id="lblBack" alignment="CENTER" layoutX="313.0" layoutY="44.0" onMouseClicked="#lblBack_Clicked"
+               prefHeight="17.0" prefWidth="87.0" text="Back"/>
+        <JFXButton fx:id="btnReport" layoutX="293.0" layoutY="93.0" onAction="#btnReport_Action"
+                   text="Generate Report"/>
+    </children>
+</AnchorPane>

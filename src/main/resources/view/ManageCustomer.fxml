@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="601.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.ManageCustomerController">
+    <children>
+        <JFXTextField fx:id="txtID" layoutX="116.0" layoutY="40.0" onAction="#txtID_Action" />
+        <JFXTextField fx:id="txtName" layoutX="116.0" layoutY="95.0" onAction="#txtName_Action" />
+        <JFXTextField fx:id="txtAddress" layoutX="116.0" layoutY="150.0" onAction="#txtAddress_Action" />
+        <Label fx:id="lbl_new_Customer" alignment="CENTER" contentDisplay="CENTER" layoutX="364.0" layoutY="25.0" onMouseClicked="#lbl_new_Customer_Clicked" prefHeight="25.0" prefWidth="120.0" text="New Customer" />
+        <Label layoutX="35.0" layoutY="45.0" text="ID" />
+        <Label layoutX="35.0" layoutY="100.0" text="Name" />
+        <Label layoutX="35.0" layoutY="155.0" text="Address" />
+        <JFXButton fx:id="save_Action" layoutX="296.0" layoutY="255.0" onAction="#save_Action_CLicked" prefHeight="25.0" prefWidth="68.0" text="Save" textFill="#281fd1" />
+        <JFXButton fx:id="Remove_Action" layoutX="385.0" layoutY="255.0" onAction="#Remove_Action_Clicked" text="Remove" textFill="#281fd1" />
+        <TableView fx:id="tblCustomer" layoutX="31.0" layoutY="301.0" prefHeight="260.0" prefWidth="440.0">
+            <columns>
+                <TableColumn prefWidth="78.0" text="ID" />
+                <TableColumn prefWidth="91.0" text="Name" />
+            <TableColumn prefWidth="124.0" text="Salary" />
+                <TableColumn prefWidth="146.0" text="Address" />
+            </columns>
+        </TableView>
+        <Label fx:id="lblBack" alignment="CENTER" layoutX="385.0" layoutY="67.0" onMouseClicked="#lblBack_Clicked" prefHeight="17.0" prefWidth="81.0" text="Back" />
+        <JFXButton fx:id="btnReport" layoutX="374.0" layoutY="127.0" onAction="#btnReport_Action" text="Generate Report" />
+      <Label layoutX="35.0" layoutY="210.0" text="Salary" />
+      <JFXTextField fx:id="txtSalary" layoutX="116.0" layoutY="205.0" onAction="#txtSalary_Action" />
+    </children>
+</AnchorPane>

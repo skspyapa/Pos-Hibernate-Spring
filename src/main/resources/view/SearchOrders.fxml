@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane prefHeight="387.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.SearchOrderController">
+    <children>
+        <Label layoutX="232.0" layoutY="14.0" text="Search Orders">
+            <font>
+                <Font size="22.0"/>
+            </font>
+        </Label>
+        <TableView fx:id="tblSearchOrder" layoutX="9.0" layoutY="123.0" prefHeight="256.0" prefWidth="582.0">
+            <columns>
+                <TableColumn prefWidth="90.0" text="Order ID"/>
+                <TableColumn prefWidth="104.0" text="Order Date"/>
+                <TableColumn prefWidth="148.0" text="Customer ID"/>
+                <TableColumn prefWidth="119.0" text="Customer Name"/>
+                <TableColumn prefWidth="120.0" text="Order Total"/>
+            </columns>
+        </TableView>
+        <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="14.0" layoutY="61.0" onAction="#txtSearch"
+                      prefHeight="25.0" prefWidth="572.0" promptText="Enter Search Criteria"/>
+        <Label fx:id="lbl_Back" layoutX="493.0" layoutY="22.0" onMouseClicked="#lbl_Back_Action" text="Back"/>
+    </children>
+</AnchorPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<AnchorPane id="pane" fx:id="title" prefHeight="350.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.controller.DashBoardController">
+    <children>
+        <JFXButton fx:id="Manage_Cus" buttonType="RAISED" contentDisplay="CENTER" layoutX="14.0" layoutY="163.0"
+                   onAction="#Manage_Cus_Clicked" prefHeight="77.0" prefWidth="127.0" style="-fx-border-color: #008dff;"
+                   text="Manage Customer" textFill="#008dff">
+            <font>
+                <Font name="Yu Gothic Regular" size="12.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </JFXButton>
+        <JFXButton fx:id="Manage_Itm" buttonType="RAISED" contentDisplay="CENTER" layoutX="141.0" layoutY="163.0"
+                   onAction="#Manage_Itm_Clicked" prefHeight="77.0" prefWidth="127.0" style="-fx-border-color: #008dff;"
+                   text="Manage Item" textFill="#008dff">
+            <font>
+                <Font name="Yu Gothic Regular" size="12.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </JFXButton>
+        <JFXButton fx:id="plc_Order" buttonType="RAISED" contentDisplay="CENTER" layoutX="268.0" layoutY="163.0"
+                   onAction="#plc_Order_Clicked" prefHeight="77.0" prefWidth="127.0" style="-fx-border-color: #008dff;"
+                   text="Place Order" textFill="#008dff">
+            <font>
+                <Font name="Yu Gothic Regular" size="12.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </JFXButton>
+        <JFXButton fx:id="viw_Order" buttonType="RAISED" contentDisplay="CENTER" layoutX="395.0" layoutY="163.0"
+                   onAction="#viw_Order_Clicked" prefHeight="77.0" prefWidth="127.0" style="-fx-border-color: #008dff;"
+                   text="View Order" textFill="#008dff">
+            <font>
+                <Font name="Yu Gothic Regular" size="12.0"/>
+            </font>
+            <effect>
+                <DropShadow/>
+            </effect>
+        </JFXButton>
+        <Label id="title" fx:id="lblTitle" alignment="CENTER" layoutY="14.0" prefHeight="99.0" prefWidth="537.0"
+               stylesheets="@style/DashBoard.css" text="Modern Pos System">
+            <font>
+                <Font name="Sylfaen" size="40.0"/>
+            </font>
+            <textFill>
+                <LinearGradient endX="1.0" endY="0.004761904761904762" startX="1.0">
+                    <stops>
+                        <Stop color="#23ad5a"/>
+                        <Stop color="#24ad59" offset="0.37800687285223367"/>
+                        <Stop color="#24ad59" offset="0.5223367697594502"/>
+                        <Stop color="#23ad5a" offset="0.9033060789193033"/>
+                        <Stop color="#1f65d7" offset="1.0"/>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+    </children>
+</AnchorPane>
